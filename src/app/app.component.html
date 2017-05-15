@@ -1,7 +1,7 @@
 <div>
-  <form  [formGroup]="myForm" novalidate (ngSubmit)="save(myForm.value)">
+  <paralel (myevent)="gotosecondtab(f)"></paralel>
+  <form #f='ngForm'  [formGroup]="myForm" novalidate (ngSubmit)="save(myForm.value)">
   <table-c formGroupName="tableForm"></table-c>
   <request-c formGroupName="requestForm"></request-c>
-  <button type="submit">Submit</button>
   </form>
 </div>

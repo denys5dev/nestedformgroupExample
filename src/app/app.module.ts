@@ -6,12 +6,14 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { TableComponent } from './comp/table.component';
 import { RequestComponent } from './comp/request.component';
+import { ParalelComponent } from './paralel.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TableComponent,
-    RequestComponent
+    RequestComponent,
+    ParalelComponent
   ],
   imports: [
     BrowserModule,

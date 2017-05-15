@@ -5,7 +5,7 @@ import { FormBuilder, FormGroup, FormControl } from '@angular/forms';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit {
 
   myForm: FormGroup;
 
@@ -25,5 +25,9 @@ export class AppComponent implements OnInit{
 
   save(fr) {
     console.log(fr);
+  }
+
+ gotosecondtab(fn) {
+    fn.ngSubmit.emit();
   }
 }
