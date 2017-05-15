@@ -1,3 +1,7 @@
-<h1>
-  {{title}}
-</h1>
+<div>
+  <form  [formGroup]="myForm" novalidate (ngSubmit)="save(myForm.value)">
+  <table-c formGroupName="tableForm"></table-c>
+  <request-c formGroupName="requestForm"></request-c>
+  <button type="submit">Submit</button>
+  </form>
+</div>
